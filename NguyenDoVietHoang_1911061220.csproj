@@ -1,9 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FashionWeb.Application\FashionWeb.Application.csproj" />
+    <ProjectReference Include="..\FashionWeb.Data.EF\FashionWeb.Data.EF.csproj" />
+    <ProjectReference Include="..\FashionWeb.Data\FashionWeb.Data.csproj" />
+    <ProjectReference Include="..\FashionWeb.infrastructure\FashionWeb.infrastructure.csproj" />
+    <ProjectReference Include="..\FashionWeb.Utilities\FashionWeb.Utilities.csproj" />
+  </ItemGroup>
 
 </Project>
